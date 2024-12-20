@@ -1,0 +1,474 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "gilroy";
+    color: black; 
+    
+}
+
+
+
+
+html,body {
+   height: 100%;
+   width: 100%;
+   position: relative;
+  
+}   
+
+.main {
+    height: 100%;
+    width: 100%;
+    /* background-color: antiquewhite; */
+    background: url("https://img.freepik.com/free-vector/watercolor-world-art-day-background_23-2149327050.jpg");
+    background-size: cover;
+    background-position: center;
+} 
+
+
+.home {
+    height: 100%;
+    width: 100%;
+}
+
+.nav{
+    width: 100%;
+    height: 16vh;
+    /* background-color: red; */
+    padding: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8vw;
+}
+
+
+.nav a{
+   font-size: 1.8vw;
+   text-decoration: none;
+   color: rgba(0, 0, 0, 0.888);
+   font-weight: 600;
+
+}
+
+.line{
+    width: 40%;
+    height: 1px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.681);
+}
+
+.home-content{
+    width: 100%;
+    height: 84vh;
+    padding: 10vh 4vw;
+    text-align: center;
+}
+
+
+.home-content h1{
+    margin-top: 5vh;
+    font-size: 10vw;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.888);
+}
+
+
+.home-content h4{
+    font-size: 3vw;
+    font-weight: 600;
+    color: #545454;
+}
+
+.home-content p{
+    margin-top: .5vw;
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+
+
+.about {
+    height: 100%;
+    width: 100%;
+    background: url("https://img.freepik.com/free-vector/watercolor-world-art-day-background_23-2149327050.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    padding: 10vh 5vw;
+}
+
+.left{
+    width: 60%;
+    height: 100%;
+    padding: 5.3vw 5vw;
+    /* background-color: pink; */
+    text-align: start;
+}
+
+.left h1{
+    font-size: 3.5vw;
+    font-weight: 600;
+}
+.left p{
+    font-size: 1.6vw;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.532);
+    margin-top: 2vw;
+    width: 90%;
+    line-height: 1.9vw;
+    word-spacing: 8px;
+}
+
+.right{
+    width: 30%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blue;  */
+}
+
+.right img{
+    width: 70%;
+    height: 65%;
+    border-radius: 40px;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 2.8vw;
+}
+
+.right h4{
+    margin-top: 1.3vw;
+    font-size: 1.3vw;
+    color: rgba(0, 0, 0, 0.667);
+}
+
+
+.skill{
+    min-height: 100vh;
+    width: 100%;
+    background: url("https://img.freepik.com/free-vector/watercolor-world-art-day-background_23-2149327050.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 9;
+    padding: 12vh 10vh;
+    border-bottom: 2px solid #ccc;
+}
+
+.skill>h1{
+    text-decoration: underline;
+    text-align: center;
+    font-size: 6vw;
+    margin-bottom: 4vw;
+}
+
+.elem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: salmon; */
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.elem img{
+    position: absolute;
+    opacity: 0;
+    transition: all ease-out 0.3s;
+    transform: translateY(10%) rotate(2deg);
+}
+
+.elem img:nth-child(1){
+    height: 250px;
+    width:  300px;
+    left: 2%;
+}
+
+.elem img:nth-child(3){
+    height: 220px;
+    width: 260px;
+    right: 4%;
+}
+.elem h1{
+    font-size: 7vw;
+    font-weight: 600;
+    transition: all ease-out 0.3s;
+    color: rgba(0, 0, 0, 0.571);
+}
+
+.elem:hover h1{
+    transform: translateY(-100%);
+    color: rgba(0, 0, 0, 0.849);
+}
+
+.elem:hover img{
+    opacity: 1;
+    transform: translateY(0) rotate(0);
+}
+
+.skill-text-div{
+    /* background-color: lightblue; */
+    height: 140px;
+    overflow: hidden;
+}
+
+
+
+
+
+
+.project {
+    width: 100%;
+    height: 100%;
+    background: url("https://img.freepik.com/free-vector/watercolor-world-art-day-background_23-2149327050.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .project h1{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 6vw;
+    margin-bottom: 2vw;
+  }
+
+.swiper {
+    width: 100%;
+    height: 80%;
+   
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide .card{
+    height: 350px;
+    width: 600px;
+  }
+
+  .card img{
+    height: 100%;
+    width: 100%;
+    border: 2px solid black;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .swiper-slide h3{
+    font-size: 1.3vw;
+    margin-top: 1vw;
+  }
+
+  /* .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } */
+
+  .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #000;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .swiper-pagination-bullet-active {
+    color: #fff;
+    background: #007aff;
+  }
+
+
+
+.form{
+    min-height: 100vh;
+    width: 100%;
+    padding: 3vw 0;
+    background: url("https://img.freepik.com/free-vector/watercolor-world-art-day-background_23-2149327050.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+.form h1{
+    font-size: 4vw;
+    text-decoration: underline;
+    text-align: center;
+    color: #34495e;
+    margin-bottom: 1.5vw;
+}
+
+.contact-form {
+    height: 85vh;
+    width: 92%;
+    background: url("https://img.freepik.com/free-vector/watercolor-world-art-day-background_23-2149327050.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 40px 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #34495e;
+  }
+  
+  .contact-form p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #646969;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #f39c12;
+    outline: none;
+  }
+  
+  .contact-form button {
+    padding: 8px 6px;
+    background-color: #f39c12;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #e67e22;
+  }
+  
+
+
+
+
+
+  .footer{
+    height: 50vh;
+    width: 100%;
+    position: relative;
+    padding: 2vw 3vw 3vw 3vw;
+    background: url("https://img.freepik.com/free-vector/watercolor-world-art-day-background_23-2149327050.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.footer h1{
+    font-size: 5vw;
+    text-decoration: underline;
+    text-align: center;
+    color: #34495e;
+}
+
+.footer .item{
+    padding: 2vw 1vw;
+    font-size: 1.6vw;
+    font-weight: 600;
+    text-align: center;
+    color: #34495e;
+    margin-top: 1.2vw;
+    margin-bottom: 6vw;
+}
+
+
+.item p{
+    color: #34495e;
+}
+
+
+
+.footer-bottom{
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-left{
+    /* background-color: pink; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vw;
+}
+
+.footer-right{
+    /* background-color: pink; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3vw;
+}
+
+.footer-left h3, .footer-right h3 {
+    position: relative; /* Ensure pseudo-elements are relative to their h3 parent */
+    margin: 0; /* Remove default margins for better spacing control */
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+    color: #34495e;
+    cursor: pointer; /* Make the h3s look clickable */
+}
+
+.footer-left h3::after, .footer-right h3::after {
+    content: "";
+    position: absolute;
+    bottom: -2px; /* Position slightly below the text */
+    left: 0;
+    width: 0;
+    height: 1px; 
+    background-color: #343434; 
+    transition: width 0.5s ease-out; 
+}
+
+.footer-left h3:hover::after, .footer-right h3:hover::after {
+    width: 100%; 
+}
